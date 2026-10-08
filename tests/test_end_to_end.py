@@ -4,9 +4,9 @@ from app.main import app
 client = TestClient(app)
 
 
-def test_register_and_login():
-    username = "autotest_user_2"
-    email = "autotest2@example.com"
+def test_register_login_create_request():
+    username = "workflow_user_01"
+    email = "workflow01@example.com"
     password = "Test12345!"
 
     register = client.post(
@@ -30,5 +30,23 @@ def test_register_and_login():
 
     assert login.status_code == 200
 
-    body = login.json()
-    assert "access_token" in body
+    token = login.json()["access_token"]
+
+    headers = {
+        "Authorization": f"Bearer {token}"
+    }
+
+    request = client.post(
+        "/api/requests/",
+        json={
+            "title": "Automated Integration Test Dataset",
+            "description": "Testing the CrowdMine integrated workflow",
+            "target_records": 100
+        },
+        headers=headers
+    )
+
+    assert request.status_code == 200
+
+    request_data = request.json()
+    assert "request_id" in request_data
