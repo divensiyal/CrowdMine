@@ -11,9 +11,6 @@ ALLOWED_EXTENSIONS = {
     ".csv",
     ".json",
     ".txt",
-    ".xlsx",
-    ".xls",
-    ".parquet",
 }
 
 
