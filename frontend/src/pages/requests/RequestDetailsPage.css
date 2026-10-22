@@ -1,0 +1,242 @@
+.request-details-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.request-details-header {
+  margin-bottom: 32px;
+}
+
+.request-details-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.request-details-back:hover {
+  color: #111827;
+}
+
+.request-details-eyebrow {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.request-details-header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #111827;
+}
+
+.request-details-description {
+  max-width: 700px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.request-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.request-details-card {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.request-details-card span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.request-details-card strong {
+  font-size: 24px;
+  color: #111827;
+}
+
+.request-schema-section {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.request-section-header {
+  margin-bottom: 20px;
+}
+
+.request-section-header h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.request-section-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.request-schema-empty {
+  padding: 32px;
+  text-align: center;
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.request-schema-table {
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.schema-table-header,
+.schema-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  padding: 14px 16px;
+}
+
+.schema-table-header {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.schema-table-row {
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+}
+
+.schema-table-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .request-details-header h1 {
+    font-size: 26px;
+  }
+
+  .request-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .request-schema-section {
+    padding: 20px;
+  }
+
+  .schema-table-header,
+  .schema-table-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .schema-table-header span:not(:first-child) {
+    display: none;
+  }
+
+  .schema-table-row {
+    padding: 16px;
+  }
+}
+
+.request-details-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.request-publish-button,
+.request-close-button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.request-publish-button {
+  background: #111827;
+  color: #ffffff;
+}
+
+.request-publish-button:hover {
+  background: #1f2937;
+}
+
+.request-close-button {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.request-close-button:hover {
+  background: #f3f4f6;
+}
+
+.request-publish-button:disabled,
+.request-close-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.request-contribute-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 9px;
+  background: #111827;
+  border: 1px solid #111827;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.request-contribute-button:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.request-edit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border: 1px solid #d5d9e0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.request-edit-button:hover {
+  background: #f5f6f8;
+}

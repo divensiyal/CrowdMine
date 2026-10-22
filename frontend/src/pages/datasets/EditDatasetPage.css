@@ -1,0 +1,140 @@
+.edit-dataset-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.edit-dataset-header {
+  margin-bottom: 28px;
+}
+
+.edit-dataset-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-dataset-back:hover {
+  color: #111;
+}
+
+.edit-dataset-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.edit-dataset-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #111;
+}
+
+.edit-dataset-header p:last-child {
+  margin-top: 10px;
+  color: #666;
+}
+
+.edit-dataset-card {
+  padding: 28px;
+  border: 1px solid #e2e5e9;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.edit-dataset-field {
+  margin-bottom: 22px;
+}
+
+.edit-dataset-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.edit-dataset-field input,
+.edit-dataset-field textarea,
+.edit-dataset-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d5d9e0;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.edit-dataset-field textarea {
+  resize: vertical;
+}
+
+.edit-dataset-field input:focus,
+.edit-dataset-field textarea:focus,
+.edit-dataset-field select:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.edit-dataset-error,
+.edit-dataset-success {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.edit-dataset-error {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.edit-dataset-success {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.edit-dataset-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.edit-dataset-cancel,
+.edit-dataset-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-dataset-cancel {
+  border: 1px solid #d5d9e0;
+  background: #fff;
+  color: #222;
+}
+
+.edit-dataset-submit {
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+}
+
+.edit-dataset-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

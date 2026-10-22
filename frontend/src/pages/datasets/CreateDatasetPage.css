@@ -1,0 +1,134 @@
+.create-dataset-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.create-dataset-header {
+  margin-bottom: 28px;
+}
+
+.create-dataset-back {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.create-dataset-back:hover {
+  text-decoration: underline;
+}
+
+.create-dataset-eyebrow {
+  margin: 24px 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #666;
+}
+
+.create-dataset-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.create-dataset-header p:last-child {
+  margin: 0;
+  color: #666;
+}
+
+.create-dataset-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.create-dataset-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.create-dataset-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.optional-label {
+  margin-left: 8px;
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.create-dataset-field input,
+.create-dataset-field textarea,
+.create-dataset-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 9px;
+  background: #fff;
+  font: inherit;
+  outline: none;
+}
+
+.create-dataset-field input:focus,
+.create-dataset-field textarea:focus,
+.create-dataset-field select:focus {
+  border-color: #222;
+}
+
+.create-dataset-field textarea {
+  resize: vertical;
+}
+
+.create-dataset-field small {
+  color: #777;
+  font-size: 12px;
+}
+
+.create-dataset-error {
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  background: #fff1f1;
+  color: #b42318;
+  font-size: 14px;
+}
+
+.create-dataset-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.create-dataset-cancel,
+.create-dataset-submit {
+  padding: 11px 18px;
+  border-radius: 9px;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.create-dataset-cancel {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+}
+
+.create-dataset-submit {
+  border: none;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+}
+
+.create-dataset-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
