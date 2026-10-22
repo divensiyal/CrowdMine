@@ -1,0 +1,123 @@
+.edit-request-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.edit-request-header {
+  margin-bottom: 28px;
+}
+
+.edit-request-header h1 {
+  margin: 14px 0 8px;
+  font-size: 32px;
+}
+
+.edit-request-header p {
+  margin: 0;
+  color: #666;
+}
+
+.edit-request-back {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.edit-request-back:hover {
+  text-decoration: underline;
+}
+
+.edit-request-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.edit-request-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.edit-request-field label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.edit-request-field input,
+.edit-request-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  font: inherit;
+  outline: none;
+}
+
+.edit-request-field input:focus,
+.edit-request-field textarea:focus {
+  border-color: #222;
+}
+
+.edit-request-field textarea {
+  resize: vertical;
+}
+
+.edit-request-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.edit-request-cancel,
+.edit-request-save {
+  padding: 11px 18px;
+  border-radius: 9px;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-request-cancel {
+  border: 1px solid #ddd;
+  color: #333;
+  background: #fff;
+}
+
+.edit-request-save {
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+.edit-request-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.edit-request-message {
+  padding: 12px 14px;
+  border-radius: 9px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.edit-request-message--error {
+  background: #fff1f1;
+  color: #b42318;
+}
+
+.edit-request-message--success {
+  background: #effaf3;
+  color: #18794e;
+}
+
+.edit-request-error {
+  color: #b42318;
+  margin-bottom: 20px;
+}

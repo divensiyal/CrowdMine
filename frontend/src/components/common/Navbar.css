@@ -1,0 +1,277 @@
+/* ================================
+   Navbar
+================================ */
+
+.navbar {
+  width: 100%;
+  height: 68px;
+
+  border-bottom: 1px solid #e8eaed;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  backdrop-filter: blur(12px);
+}
+
+
+.navbar__inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 32px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ================================
+   Brand
+================================ */
+
+.navbar__brand {
+  color: #111827;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+
+  text-decoration: none;
+}
+
+.navbar__brand:hover {
+  color: #000;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.navbar__link {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 11px;
+
+  border-radius: 7px;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.navbar__link:hover {
+  background: #f5f6f7;
+  color: #111827;
+}
+
+
+.navbar__link.active {
+  background: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+}
+
+
+/* ================================
+   Profile
+================================ */
+
+.navbar__profile {
+  display: inline-flex;
+  align-items: center;
+
+  margin-left: 10px;
+  padding: 8px 13px;
+
+  border-left: 1px solid #e5e7eb;
+
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.navbar__profile:hover {
+  color: #000;
+}
+
+
+/* ================================
+   Logout
+================================ */
+
+.navbar__logout {
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #6b7280;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.navbar__logout:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* ================================
+   Register / Get Started
+================================ */
+
+.navbar__register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 4px;
+  padding: 9px 15px;
+
+  border-radius: 8px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.navbar__register:hover {
+  background: #000;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 850px) {
+  .navbar__inner {
+    padding: 0 20px;
+  }
+
+  .navbar__links {
+    gap: 2px;
+  }
+
+  .navbar__link {
+    padding: 7px 8px;
+  }
+
+  .navbar__profile {
+    margin-left: 5px;
+    padding-left: 9px;
+  }
+}
+
+
+@media (max-width: 680px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar__inner {
+    min-height: 64px;
+
+    padding: 12px 18px;
+
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar__links {
+    width: 100%;
+
+    overflow-x: auto;
+
+    padding-bottom: 2px;
+  }
+
+  .navbar__link {
+    flex-shrink: 0;
+  }
+
+  .navbar__profile {
+    flex-shrink: 0;
+  }
+
+  .navbar__logout {
+    flex-shrink: 0;
+  }
+}
+
+.navbar__register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 4px;
+  padding: 9px 15px;
+
+  border-radius: 8px;
+
+  background: #111827;
+  color: #ffffff !important;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.navbar__register:hover {
+  background: #000;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}

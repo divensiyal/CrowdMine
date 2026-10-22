@@ -1,0 +1,179 @@
+.create-request-page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.create-request-header {
+  margin-bottom: 32px;
+}
+
+.create-request-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.create-request-back:hover {
+  color: #111827;
+}
+
+.create-request-eyebrow {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.create-request-header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #111827;
+}
+
+.create-request-description {
+  max-width: 650px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.create-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-section {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.form-section-header {
+  margin-bottom: 24px;
+}
+
+.form-section-header h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.form-section-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group label span {
+  color: #dc2626;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #111827;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #111827;
+}
+
+.create-request-error {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.create-request-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.create-request-cancel,
+.create-request-submit {
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-request-cancel {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.create-request-submit {
+  border: none;
+  background: #111827;
+  color: #ffffff;
+}
+
+.create-request-submit:hover {
+  background: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .create-request-header h1 {
+    font-size: 26px;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .create-request-actions {
+    flex-direction: column-reverse;
+  }
+
+  .create-request-cancel,
+  .create-request-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.form-help {
+  margin-top: -2px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.create-request-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
